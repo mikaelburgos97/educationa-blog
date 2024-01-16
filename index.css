@@ -569,7 +569,7 @@ i {
 .post-container{
   padding: 1.5em;
   /* height: 250px; */
-  width: 792;
+  max-width: 1200px;
   border-radius: 10px;
   background-color: whitesmoke;
   position: relative;
@@ -620,4 +620,37 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************
+/*
+*/
+#editor-container {
+  height: 375px;
 }

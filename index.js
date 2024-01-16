@@ -8,26 +8,53 @@ let body = document.querySelector('body')
 let main = document.querySelector('.main')
 
 
-const users = {
-  user: "user",
-  profilePic: '',
-  password: 'whwhwhwhwh',
-  tags: ['technology', 'health', 'programming', 'books', 'finance', 'trending'],
-  email: "mwmwmw@gmail",
-  firstName: 'name',
-  lastName: 'surname',
-}
+// const users = {
+//   user: "user",
+//   profilePic: '',
+//   password: 'whwhwhwhwh',
+//   tags: ['technology', 'health', 'programming', 'books', 'finance', 'trending'],
+//   email: "mwmwmw@gmail",
+//   firstName: 'name',
+//   lastName: 'surname',
+// }
 
 
-const post = {
-  postedBy: 'user',
-  forTag: 'technology',
-  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  liked: false,
-  disliked: false,
-  datePosted: '1/16/2024',
-}
+// const post = {
+//   postedBy: 'user',
+//   forTag: 'technology',
+//   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+//   liked: false,
+//   disliked: false,
+//   datePosted: '1/16/2024',
+// }
 
+
+
+const pen  = document.querySelector('.pen')
+// document.querySelector('.topbar').style.backgroundColor = 'rgba(0,0,0,.4)';
+
+
+
+pen.addEventListener('click', function(){
+
+  
+  Swal.fire({
+    html: `<div id="editor-container">
+    </div>`,
+  });
+
+  var quill = new Quill('#editor-container', {
+    modules: {
+      toolbar: [
+        [{ header: [1, 2, false] }],
+        ['bold', 'italic', 'underline'],
+        ['image', 'code-block']
+      ]
+    },
+    placeholder: 'Compose an epic...',
+    theme: 'snow'  // or 'bubble'
+  });
+})
 
 
 
