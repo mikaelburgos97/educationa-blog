@@ -8,13 +8,52 @@ let body = document.querySelector('body')
 let main = document.querySelector('.main')
 
 
-const posts = [{
-  technology: []
-}]
 
 
 
-const usersRegister = {};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const users = {
 //   user: "user",
@@ -35,6 +74,57 @@ const usersRegister = {};
 //   disliked: false,
 //   datePosted: '1/16/2024',
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
