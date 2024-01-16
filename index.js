@@ -8,6 +8,14 @@ let body = document.querySelector('body')
 let main = document.querySelector('.main')
 
 
+const posts = [{
+  technology: []
+}]
+
+
+
+const usersRegister = {};
+
 // const users = {
 //   user: "user",
 //   profilePic: '',
@@ -41,6 +49,7 @@ pen.addEventListener('click', function(){
   Swal.fire({
     html: `<div id="editor-container">
     </div>`,
+    allowOutsideClick: false
   });
 
   var quill = new Quill('#editor-container', {

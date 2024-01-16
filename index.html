@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
   <link rel="stylesheet" href="./index.css">
 
   <title>Mikael Burgos</title>
@@ -24,14 +28,15 @@
     </div>
 
     <div class="main">
-      <div class="pen">
-        <img src="./pencil-solid.svg"/>
-      </div>
+      
       <div class="topbar">
         <!-- <a href="#banner  " class="logo">Mikael Burgos</a> -->
         <div class="toggle">
           <i class="fa-solid fa-bars"></i>
         </div>
+      </div>
+      <div class="pen">
+        <img src="./pencil-solid.svg"/>
       </div>
 
       <!-- banner -->
@@ -50,21 +55,48 @@
               <img class="dislike" src="./thumbs-down-regular.svg"/>
             </div>
           </div>
-          
-          <!-- <div class="imgBox"> -->
-            <!-- <img class="profile-pic " src="./mike-pic.jpg " >   -->
-          <!-- </div> -->
-          <!-- <h3>Mikael Burgos</h3> -->
-          <!-- <p>Front-end Web Developer</p> -->
-          <!-- <a href="path_to_file" download="proposed_file_name">Download</a> -->
-          <!-- <a href="./mikael-burgos-resume.pdf" download="mikael-burgos-cv" class="btn">Download My CV</a> -->
-          <!-- <ul class="socialMedia">
-            <li><a href="https://www.linkedin.com/in/mikael-burgos-627016130/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://instagram.com/just_mikaelb?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://github.com/mikaelburgos97" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://twitter.com/MikaelBurgos?t=zUdko7aKMvtZAoSZKes3ww&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-          </ul> -->
+
+          <div class="post-container">
+            <div class="top-post">
+              <p>User123456 <span class="tag"><em>in @technology</em></span></p>
+            </div>
+            <div class="middle-post">
+              <!-- <img src="./"/> -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="bottom-post">
+              <img class="like" src="./thumbs-up-regular.svg" />
+              <img class="dislike" src="./thumbs-down-regular.svg"/>
+            </div>
+          </div>
         </div>
+
+        <div class="post-container">
+            <div class="top-post">
+              <p>User123456 <span class="tag"><em>in @technology</em></span></p>
+            </div>
+            <div class="middle-post">
+              <!-- <img src="./"/> -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="bottom-post">
+              <img class="like" src="./thumbs-up-regular.svg" />
+              <img class="dislike" src="./thumbs-down-regular.svg"/>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="top-post">
+              <p>User123456 <span class="tag"><em>in @technology</em></span></p>
+            </div>
+            <div class="middle-post">
+              <!-- <img src="./"/> -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="bottom-post">
+              <img class="like" src="./thumbs-up-regular.svg" />
+              <img class="dislike" src="./thumbs-down-regular.svg"/>
+            </div>
+          </div>
       </section>
 
       <!-- about -->
@@ -173,6 +205,8 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js"></script>
   <script src="./index.js"></script>
+  <script src="/modulos/textEditor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 </body>
 </html>
