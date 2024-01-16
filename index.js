@@ -19,6 +19,16 @@ const users = {
 }
 
 
+const post = {
+  postedBy: 'user',
+  forTag: 'technology',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  liked: false,
+  disliked: false,
+  datePosted: '1/16/2024',
+}
+
+
 
 
 // const users = [];

@@ -587,7 +587,37 @@ i {
 .like{
   margin-right: 10px;
 }
+.like, .dislike {
+  width: 20px
+}
 
 .tag {
   font-weight: 500;
+}
+
+
+.pen{
+  position: fixed;
+    width: 83px;
+    height: 68px;
+    z-index: 8;
+    bottom: 0.3%;
+    right: 0%;
+    border-radius: 50%;
+}
+
+
+.pen img {
+
+    float: inherit!important;
+    position: relative!important;
+    width: 30px!important;
+    height: 30px!important;
+    color: #fff!important;
+    text-align: center!important;
+    font-size: 25px!important;
+    font-weight: 400!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
