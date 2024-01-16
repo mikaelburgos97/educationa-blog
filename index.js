@@ -6,6 +6,7 @@ let navigation = document.querySelector('.navigation')
 let themeSwitch = document.querySelector('.themeSwitch')
 let body = document.querySelector('body')
 let main = document.querySelector('.main')
+let post = document.querySelectorAll('.post-container')
 
 
 
@@ -249,6 +250,7 @@ toggle.onclick = function(){
 
 themeSwitch.onclick = function (){
   body.classList.toggle('dark')
+  post.classList.toggle('dark')
 }
 
 
@@ -259,3 +261,16 @@ function toggleMenu(){
   navigation.classList.remove('active')
   main.classList.remove('active')
 }
+
+const icon = document.querySelector('.icon');
+const popup = document.querySelector('.popup');
+
+icon.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+document.addEventListener('click', (event) => {
+  if (!icon.contains(event.target)) {
+    popup.style.display = 'none';
+  }
+});
