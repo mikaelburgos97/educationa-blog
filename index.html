@@ -16,13 +16,28 @@
 <body>
   <div class="container">
     <div class="navigation">
-      <ul>
+      <div class="profile">
+        <img src="./mike-pic.jpg" style="width: 90px; border-radius: 49%"/>
+        <h3>user123456</h3>
+        <p>Tags: 6</p>
+      </div>
+
+      <div class="menu">
+        <ul>
+        <li><i class="fa-solid fa-door-open"></i><a href="#banner" onclick="toggleMenu()">Home</a></li>
+        <li><i class="fa-regular fa-user"></i><a href="#banner" onclick="toggleMenu()">Profile</a></li>
+        <!-- <li><a href="#banner" onclick="toggleMenu()">Notifications</a></li> -->
+
+
+        </ul>
+      </div>
+      <!-- <ul>
         <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#technologies" onclick="toggleMenu()">Tecnologies</a></li>
         <li><a href="#project" onclick="toggleMenu()">Project</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </ul>
+      </ul> -->
 
       <div class="themeSwitch"></div>
     </div>
@@ -47,7 +62,8 @@
         <div class="content"> 
           <div class="post-container">
             <div class="top-post">
-              <p>User123456 <span class="tag"><em>in @technology</em></span></p>
+              <img src="./mike-pic.jpg" style="width: 30px; border-radius: 49%"/>
+              <p>User123456 <span class="tag"><em style="font-weight:200;">in @technology</em></span></p>
             </div>
             <div class="middle-post">
               <!-- <img src="./"/> -->
@@ -58,15 +74,15 @@
                 <i class="fa-regular fa-thumbs-up"></i>
                 <i class="fa-regular fa-thumbs-down"></i>
               </div>
-              <div class="dots-btn">
-                <i class="fa-solid fa-ellipsis-vertical icon"></i>
+              <div class="dots-btn  icon">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="popup">
                 <div>
-                  <div>
+                  <div class="icons-cont">
                     <i class="fa-solid fa-pen"></i><span style="margin:10px;">Edit</span>
                   </div>
-                  <div>
+                  <div class="icons-cont">
                     <i class="fa-solid fa-trash"></i><span style="margin:10px;">Delete</span>
                   </div>
                 </div>
@@ -127,7 +143,9 @@
                 <i class="fa-regular fa-thumbs-down"></i>
               </div>
               <div>
+                <a>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
               </div>
             </div>
           </div>
