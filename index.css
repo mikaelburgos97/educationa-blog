@@ -468,7 +468,7 @@ i {
   .themeSwitch{
     position: absolute;
     bottom: 20px;
-    left: 40px;
+    left: 103px;
     width: 30px;
     height: 30px;
     background: var(--black);
@@ -481,13 +481,13 @@ i {
   }
 
   .themeSwitch::before{
-    content: '\f186';
+    content: '\f08b';
     font-family: fontAwesome;
 
   }
 
   .themeSwitch::after {
-    content: 'Night Mode';
+    content: 'Log Out';
     position: absolute;
     left: 40px;
     font-size: 0.7em;
@@ -499,13 +499,13 @@ i {
   }
 
   .dark .themeSwitch::before {
-    content: '\f185';
+    content: '\f08b';
     font-family: fontAwesome;
   }
 
-  .dark .themeSwitch::after {
+  /* .dark .themeSwitch::after {
     content: 'Light Mode';
-  }
+  } */
 
   /* .title.padd{
     padding-bottom: 10px;
@@ -808,4 +808,145 @@ em {
 /* 
 .popup div div i {
   
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is for login page */
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  
+  align-items: center;
+} */
+
+
+
+
+/* .navigation.active {
+  width: 0;
+}
+
+
+
+
+.content {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+.content h1 {
+  margin-bottom: 90px;
+}
+
+section {
+  position: relative;
+  min-height: 48vh;
+}
+
+.banner {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 20xp;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 200px
+}
+
+button:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 } */
