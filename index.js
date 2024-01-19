@@ -3,7 +3,7 @@
 let toggle = document.querySelector('.toggle')
 let topbar = document.querySelector('.topbar')
 let navigation = document.querySelector('.navigation')
-let themeSwitch = document.querySelector('.themeSwitch')
+// let themeSwitch = document.querySelector('.themeSwitch')
 let body = document.querySelector('body')
 let main = document.querySelector('.main')
 let post = document.querySelectorAll('.post-container')
@@ -248,10 +248,10 @@ toggle.onclick = function(){
 }
 // theme switch toggle 
 
-themeSwitch.onclick = function (){
-  body.classList.toggle('dark')
-  post.classList.toggle('dark')
-}
+// themeSwitch.onclick = function (){
+//   body.classList.toggle('dark')
+//   post.classList.toggle('dark')
+// }
 
 
 // for mobile devices 

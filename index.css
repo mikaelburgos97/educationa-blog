@@ -471,18 +471,20 @@ i {
     left: 103px;
     width: 30px;
     height: 30px;
-    background: var(--black);
+    background: whitesmoke;
     color: var(--white);
     cursor: pointer;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: red;
   }
 
   .themeSwitch::before{
     content: '\f08b';
     font-family: fontAwesome;
+    color: red;
 
   }
 
@@ -496,12 +498,13 @@ i {
     font-weight: 300px;
     letter-spacing: 1px;
     pointer-events: none;
+    color: red;
   }
 
-  .dark .themeSwitch::before {
+  /* .dark .themeSwitch::before {
     content: '\f08b';
     font-family: fontAwesome;
-  }
+  } */
 
   /* .dark .themeSwitch::after {
     content: 'Light Mode';
