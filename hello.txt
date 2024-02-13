@@ -1,2 +1,23 @@
 'Tue Feb 13 2024 02:52:00 GMT-0400 (Bolivia Time)'
 '2/13/2024 6:52 AM'
+
+
+function formatDate(inputDateStr) {
+  const date = new Date(inputDateStr);
+
+  const month = date.toLocaleString('default', { month: 'numeric' });
+  const day = date.toLocaleString('default', { day: 'numeric' });
+  const year = date.getFullYear();
+
+  let hours = date.getHours();
+  const amPm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12 || 12; // Account for 12-hour format
+
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+
+  return `${month}/${day}/${year} ${hours}:${minutes} ${amPm}`;
+}
+
+const inputDateStr = 'Tue Feb 13 2024 02:52:00 GMT-0400 (Bolivia Time)';
+const formattedDate = formatDate(inputDateStr);
+console.log(formattedDate); // Output: 2/13/2024 6:52 AM
