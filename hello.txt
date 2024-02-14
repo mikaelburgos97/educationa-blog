@@ -1,23 +1,39 @@
-'Tue Feb 13 2024 02:52:00 GMT-0400 (Bolivia Time)'
-'2/13/2024 6:52 AM'
+I have this: "  RAW_DATA.result.forEach((item, index) => {
+
+    const estTimeCreation = new Date(item['Created Date/Time']);
+    const creationUTC = converterUTC(estTimeCreation, parseInt(item['GMT Offset']));
 
 
-function formatDate(inputDateStr) {
-  const date = new Date(inputDateStr);
+    RAW_DATA.result[index]['Created Date/Time'] = creationUTC;
 
-  const month = date.toLocaleString('default', { month: 'numeric' });
-  const day = date.toLocaleString('default', { day: 'numeric' });
-  const year = date.getFullYear();
+    if(item['Original Lead Owner Assignment Date/Time']){
 
-  let hours = date.getHours();
-  const amPm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12 || 12; // Account for 12-hour format
+      //GET EST TIME
+      const estTimeAssignment = new Date(item['Original Lead Owner Assignment Date/Time']);
 
-  const minutes = date.getMinutes().toString().padStart(2, '0');
+      const assignmentUTC = converterUTC(estTimeAssignment, parseInt(item['GMT Offset']));
+      
+      RAW_DATA.result[index]['Original Lead Owner Assignment Date/Time'] = assignmentUTC;
 
-  return `${month}/${day}/${year} ${hours}:${minutes} ${amPm}`;
-}
+    }
+    
+  })
 
-const inputDateStr = 'Tue Feb 13 2024 02:52:00 GMT-0400 (Bolivia Time)';
-const formattedDate = formatDate(inputDateStr);
-console.log(formattedDate); // Output: 2/13/2024 6:52 AM
+function converterUTC(date, GMTOffset) {
+  const GMTMinutes = GMTOffset * 60;
+  const utcMilliseconds = Date.UTC(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate(),
+    date.getHours(),
+    date.getMinutes() + (GMTMinutes), //CONVERT TO MINUTES
+    date.getSeconds()
+  );
+  date = new Date(utcMilliseconds);
+  return (
+    date.getMonth() + 1 + "/" +
+    date.getDate() + "/" +
+    date.getFullYear() + " " +
+    date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+  );
+}" and I need to know if I am converting to UTC correctly to then  sum GMTOffset negative value the minutes  
