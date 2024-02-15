@@ -1,0 +1,103 @@
+Mikael Burgos 2020-9410.
+Nota: "---" aparta cada tema y "**" separa cada solicitud de cada tema. 
+
+
+2-------------------------------------------------------------
+
+a. Version corregida:
+SELECT first_name || ' ' || last_name AS "Nombres de los empleados"
+FROM hr.employees;
+****************************************************************
+b. La sintaxis correcta:
+SELECT DISTINCT salary
+FROM hr.employees;
+****************************************************************
+c. La sintaxis correcta seria: 
+SELECT last_name
+FROM hr.employees
+ORDER BY last_name;
+****************************************************************
+d. La sintaxis correcta seria:
+SELECT last_name, salary, department_id
+FROM hr.employees
+WHERE department_id NOT IN (101,102,103);
+****************************************************************
+e. La sintaxis correcta es:
+SELECT employee_id, last_name, salary * 12 AS "ANNUAL SALARY"
+FROM hr.employees;
+
+3-------------------------------------------------------------
+a. La sintaxis seria: SELECT last_name AS "Posibles candidatos"
+FROM hr.employees
+WHERE last_name LIKE '%s';
+****************************************************************
+b. La sintaxis seria: SELECT first_name || ' ' || last_name AS "Nombre del empleado",
+       salary AS "Salario actual",
+       salary * 1.20 AS "Salario proyectado"
+FROM hr.employees
+WHERE department_id = 30;
+****************************************************************
+c. La sintaxis seria: SELECT SUBSTR(first_name, 1, 1) || ' ' || last_name AS "Name",
+       salary,
+       department_id
+FROM hr.employees
+WHERE department_id = 20;
+****************************************************************
+d. La sintaxis seria: SELECT 
+    'Sr./Sra. ' || first_name || ' ' || last_name || ' es un empleado de nuestra compañía, y devenga un salario de ' || salary || ' dólares.' AS "Información del empleado"
+FROM 
+    hr.employees;
+****************************************************************
+e. La sintaxis seria: SELECT first_name, last_name, salary
+FROM hr.employees
+WHERE salary BETWEEN 2000 AND 5000; 
+****************************************************************
+f. La sintaxis seria: SELECT email
+FROM hr.employees
+WHERE hire_date <= TO_DATE('2005-01-01', 'YYYY-MM-DD')
+  AND salary > 9000
+  AND commission_pct IS NULL;
+****************************************************************
+g. La sintaxis seria: SELECT first_name || ' ' || last_name AS "Practica 1er parcial –Base de datos Avanzada- febrero 2024"
+FROM hr.employees
+WHERE department_id = 110;
+****************************************************************
+h. La sintaxis seria: SELECT 
+    first_name || ' ' || last_name AS "Nombre_Empleados",
+    job_id AS "Puesto de trabajo"
+FROM 
+    hr.employees;
+****************************************************************
+i. 
+La sintaxis seria: SELECT DISTINCT job_title
+FROM hr.jobs
+ORDER BY job_title;
+****************************************************************
+j. La sintaxis seria: SELECT employee_id AS "Código", 
+       first_name AS "Nombre", 
+       last_name AS "Apellido", 
+       salary AS "Salario"
+FROM hr.employees
+WHERE last_name IN ('Cambrault', 'Grant')
+ORDER BY hire_date;
+****************************************************************
+k. La sintaxis seria: SELECT phone_number
+FROM hr.employees
+WHERE first_name = 'Lex' AND last_name = 'De Haan';
+****************************************************************
+l. La sintaxis seria: SELECT 
+    first_name AS "Nombre",
+    last_name AS "Apellido",
+    salary AS "Salario actual",
+    CASE
+        WHEN commission_pct IS NULL THEN salary * 1.30
+        ELSE salary
+    END AS "Proyección del salario con aumento"
+FROM 
+    hr.employees;
+
+
+
+
+
+
