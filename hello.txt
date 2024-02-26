@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Mocha Tests</title>
-  <script src="https://cdn.jsdelivr.net/npm/mocha@latest/mocha.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mocha@latest/mocha.css">
-  <script src="https://cdn.jsdelivr.net/npm/chai@latest/chai.js"></script>
-</head>
-<body>
-  <div id="mocha"></div>
-  
-  <script>
-    mocha.setup('bdd');
-  </script>
-
-  <script src="file.js"></script>
-  <script src="test.js"></script>
-
-  <script>
-    mocha.run();
-  </script>
-</body>
-</html>
+explain to me this and How should I acomplish it? "New Tasks/Audits
+Collection curve: expected amount of fees to collect from client when they enroll, example enrolled with 10k in debt = 2000-2500 expected fees. The goal is to collect some money from the client
+The main threat to this is the Cancellation Curve, which has to do with Neg and CS (I believe Sales should also be involved there)
+ 
+New Subset in Einstein: Deals w/ Collection Curve
+Link: https://debtrelief.lightning.force.com/analytics/lens/0FK8V000000HGiIWAW
+We can use this dataset to check clients that we haven't collected any money from yet
+We need to use the DS Info from the dataset to check DS's that seem ignored and then Audit if the CC's have actually been ignored (so if assigned and the client has money but no settlement)
+No due date on this, check-in next Friday 02/23
+Based on what I find, we may change assignment reasons in Neg but nothing conclusive
+ 
+Collection Curve Goals for each DS:
+12% in 6M
+27% in 12M
+37% in 18M
+" I have an excel file containing Deals: DS, unique of deals: DS ID, sum of collection curve: month 06, sum of collection curve: month 12, sum of collection curve: month 18, sum of deals: estimated fee, 6m %, 12m% 18m %.
