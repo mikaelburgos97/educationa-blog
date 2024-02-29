@@ -1,16 +1,1 @@
-explain to me this and How should I acomplish it? "New Tasks/Audits
-Collection curve: expected amount of fees to collect from client when they enroll, example enrolled with 10k in debt = 2000-2500 expected fees. The goal is to collect some money from the client
-The main threat to this is the Cancellation Curve, which has to do with Neg and CS (I believe Sales should also be involved there)
- 
-New Subset in Einstein: Deals w/ Collection Curve
-Link: https://debtrelief.lightning.force.com/analytics/lens/0FK8V000000HGiIWAW
-We can use this dataset to check clients that we haven't collected any money from yet
-We need to use the DS Info from the dataset to check DS's that seem ignored and then Audit if the CC's have actually been ignored (so if assigned and the client has money but no settlement)
-No due date on this, check-in next Friday 02/23
-Based on what I find, we may change assignment reasons in Neg but nothing conclusive
- 
-Collection Curve Goals for each DS:
-12% in 6M
-27% in 12M
-37% in 18M
-" I have an excel file containing Deals: DS, unique of deals: DS ID, sum of collection curve: month 06, sum of collection curve: month 12, sum of collection curve: month 18, sum of deals: estimated fee, 6m %, 12m% 18m %.
+I'm using salesforce and there I have multiple clients. It turns out that I charge to each of them a fee for the work that I do. The work that I do is regarding debt settlements, I must speak with creditors to negotiate client's debt through an offer to then later on make a settlement. If I make a settlement, i get to charge the client knowingly an agreed fee, however must clients has not been paying to me the agreed fee, why would that be even possible?
