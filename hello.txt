@@ -1,1 +1,14 @@
-I'm using salesforce and there I have multiple clients. It turns out that I charge to each of them a fee for the work that I do. The work that I do is regarding debt settlements, I must speak with creditors to negotiate client's debt through an offer to then later on make a settlement. If I make a settlement, i get to charge the client knowingly an agreed fee, however must clients has not been paying to me the agreed fee, why would that be even possible?
+const express = require('express');
+const app = express();
+
+// Define a route that redirects to another link
+app.get('/redirect', (req, res) => {
+    // Redirect to the specified link
+    res.redirect('https://www.example.com');
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
